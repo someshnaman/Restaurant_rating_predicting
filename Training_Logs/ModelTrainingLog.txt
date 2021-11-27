@@ -1,0 +1,109 @@
+2021-11-15/23:54:17		Starting the Model training
+2021-11-15/23:54:17		Initialising the get_data method
+2021-11-15/23:54:22		Successfully completed the reading the data
+2021-11-15/23:54:22		Data has successfully imported to training module
+2021-11-15/23:54:22		Initialising the removeUnnecessaryColumns method
+2021-11-15/23:54:22		The given number of columns has been successfully removed
+2021-11-15/23:54:22		Unnecessory columns from the data has been successfully removed
+2021-11-15/23:54:22		Starting removing duplicates from the data
+2021-11-15/23:54:23		Duplicate values has been removed
+2021-11-15/23:54:23		Duplicates have  been successfully removed
+2021-11-15/23:54:23		removing null values method has been called 
+2021-11-15/23:54:23		removing null values From data has been completed
+2021-11-15/23:54:23		null values have  been successfully removed from the data
+2021-11-15/23:54:23		renaming the columns from the data
+2021-11-15/23:54:23		removing null values method has been called renaming of columns has been completed
+2021-11-15/23:54:23		renaming of column is successfully done
+2021-11-15/23:54:23		Conversion of cost column into float datatype is done
+2021-11-15/23:54:23		formatting for rating column is done
+2021-11-15/23:54:23		Conversion  of categorical is successfully done
+2021-11-15/23:54:23		Conversion  of categorical is successfully done
+2021-11-15/23:54:25		Starting out for finding out best parameters for Random Forest
+2021-11-15/23:55:08		Random forest model has been successfully created
+2021-11-15/23:55:19		R2 value wrt random forest turn out to be 0.8883339592002911 
+2021-11-15/23:55:45		Extaa tree model has been successfully created
+2021-11-15/23:55:50		R2 value wrt Extraa tree turn out to be 0.8983720949642622 
+2021-11-15/23:55:51		Best model is Extra Tree
+2021-11-15/23:55:56		best Model is Extra tree
+2021-11-15/23:56:18		Initialising the save_model method
+2021-11-15/23:56:18		There is some problem in saving the model[Errno 2] No such file or directory: 'models/Extra tree/Extra tree.sav'
+2021-11-15/23:56:21		Extra tree Model has been successfully saved
+2021-11-16/00:00:26		Starting the Model training
+2021-11-16/00:00:26		Initialising the get_data method
+2021-11-16/00:00:31		Successfully completed the reading the data
+2021-11-16/00:00:31		Data has successfully imported to training module
+2021-11-16/00:00:31		Initialising the removeUnnecessaryColumns method
+2021-11-16/00:00:31		The given number of columns has been successfully removed
+2021-11-16/00:00:31		Unnecessory columns from the data has been successfully removed
+2021-11-16/00:00:31		Starting removing duplicates from the data
+2021-11-16/00:00:31		Duplicate values has been removed
+2021-11-16/00:00:31		Duplicates have  been successfully removed
+2021-11-16/00:00:31		removing null values method has been called 
+2021-11-16/00:00:31		removing null values From data has been completed
+2021-11-16/00:00:31		null values have  been successfully removed from the data
+2021-11-16/00:00:31		renaming the columns from the data
+2021-11-16/00:00:31		removing null values method has been called renaming of columns has been completed
+2021-11-16/00:00:31		renaming of column is successfully done
+2021-11-16/00:00:31		Conversion of cost column into float datatype is done
+2021-11-16/00:00:31		formatting for rating column is done
+2021-11-16/00:00:32		Conversion  of categorical is successfully done
+2021-11-16/00:00:32		Conversion  of categorical is successfully done
+2021-11-16/00:00:32		Starting out for finding out best parameters for Random Forest
+2021-11-16/00:01:21		Random forest model has been successfully created
+2021-11-16/00:01:22		R2 value wrt random forest turn out to be 0.8883339592002911 
+2021-11-16/00:01:46		Extaa tree model has been successfully created
+2021-11-16/00:01:48		R2 value wrt Extraa tree turn out to be 0.8983720949642622 
+2021-11-16/00:01:48		Best model is Extra Tree
+2021-11-16/00:01:48		best Model is Extra tree
+2021-11-16/00:01:48		Initialising the save_model method
+2021-11-16/00:01:48		There is some problem in saving the model[Errno 2] No such file or directory: './models/Extra tree/Extra tree.sav'
+2021-11-16/00:01:48		Extra tree Model has been successfully saved
+2021-11-16/02:25:33		Starting the Model training
+2021-11-16/02:25:33		Initialising the get_data method
+2021-11-16/02:25:41		Successfully completed the reading the data
+2021-11-16/02:25:41		Data has successfully imported to training module
+2021-11-16/02:25:41		Initialising the removeUnnecessaryColumns method
+2021-11-16/02:25:41		The given number of columns has been successfully removed
+2021-11-16/02:25:41		Unnecessory columns from the data has been successfully removed
+2021-11-16/02:25:41		Starting removing duplicates from the data
+2021-11-16/02:25:42		Duplicate values has been removed
+2021-11-16/02:25:42		Duplicates have  been successfully removed
+2021-11-16/02:25:42		removing null values method has been called 
+2021-11-16/02:25:42		removing null values From data has been completed
+2021-11-16/02:25:42		null values have  been successfully removed from the data
+2021-11-16/02:25:42		renaming the columns from the data
+2021-11-16/02:25:42		removing null values method has been called renaming of columns has been completed
+2021-11-16/02:25:42		renaming of column is successfully done
+2021-11-16/02:25:42		Conversion of cost column into float datatype is done
+2021-11-16/02:25:42		formatting for rating column is done
+2021-11-16/02:25:47		Conversion  of categorical is successfully done
+2021-11-16/02:25:50		Conversion  of categorical is successfully done
+2021-11-16/02:25:51		Starting out for finding out best parameters for Random Forest
+2021-11-16/02:26:32		Random forest model has been successfully created
+2021-11-16/02:26:33		R2 value wrt random forest turn out to be 0.8529525546153307 
+2021-11-16/02:27:00		Extaa tree model has been successfully created
+2021-11-16/02:27:12		R2 value wrt Extraa tree turn out to be 0.8733689014323567 
+2021-11-16/02:27:12		Best model is Extra Tree
+2021-11-16/02:27:44		best Model is Extra tree
+2021-11-16/02:28:17		Initialising the save_model method
+2021-11-16/02:28:31		Successfully saved the model
+2021-11-16/02:28:31		Extra tree Model has been successfully saved
+2021-11-27/21:12:21		Starting the Model training
+2021-11-27/21:12:21		Initialising the get_data method
+2021-11-27/21:12:23		Successfully completed the reading the data
+2021-11-27/21:12:23		Data has successfully imported to training module
+2021-11-27/21:12:23		Initialising the removeUnnecessaryColumns method
+2021-11-27/21:12:23		Some error has occurred in removing Unnecessary columns.The error message is "['url' 'address' 'name' 'phone' 'dish_liked' 'reviews_list'\n 'listed_in(type)'] not found in axis"
+2021-11-27/21:12:23		Training Unsuccessful The error is 
+2021-11-27/21:12:43		Starting the Model training
+2021-11-27/21:12:43		Initialising the get_data method
+2021-11-27/21:12:44		Successfully completed the reading the data
+2021-11-27/21:12:44		Data has successfully imported to training module
+2021-11-27/21:12:44		Initialising the removeUnnecessaryColumns method
+2021-11-27/21:12:44		Some error has occurred in removing Unnecessary columns.The error message is "['url' 'address' 'name' 'phone' 'dish_liked' 'reviews_list'\n 'listed_in(type)'] not found in axis"
+2021-11-27/21:12:44		Training Unsuccessful The error is 
+2021-11-27/21:14:07		Starting the Model training
+2021-11-27/21:14:07		Initialising the get_data method
+2021-11-27/21:14:07		Some error has occurred in Get_data class. The error message is [Errno 2] No such file or directory: './zomato.csv'
+2021-11-27/21:14:07		Data loading Unsuccessful
+2021-11-27/21:14:07		Training Unsuccessful The error is 

@@ -1,0 +1,14 @@
+2021-11-08/01:37:57/Initialising the get_data method2021-11-08/01:37:57/Some error has occurred in Get_data class. The error message is [Errno 2] No such file or directory: 'training_data/zomato.csv'2021-11-08/01:37:57/Data loading Unsuccessful2021-11-08/01:38:58/Initialising the get_data method2021-11-08/01:39:11/Successfully completed the reading the data2021-11-08/01:41:05/t/tInitialising the get_data method
+2021-11-08/01:41:12/t/tSuccessfully completed the reading the data
+2021-11-08/01:41:51		Initialising the get_data method
+2021-11-08/01:41:56		Successfully completed the reading the data
+2021-11-15/20:41:17		Initialising the get_data method
+2021-11-15/20:41:28		Successfully completed the reading the data
+2021-11-15/20:41:56		Initialising the get_data method
+2021-11-15/20:42:01		Successfully completed the reading the data
+2021-11-15/20:42:54		Initialising the get_data method
+2021-11-15/20:42:59		Successfully completed the reading the data
+2021-11-15/20:43:42		Initialising the get_data method
+2021-11-15/20:43:46		Successfully completed the reading the data
+2021-11-15/20:44:02		Initialising the get_data method
+2021-11-15/20:44:07		Successfully completed the reading the data

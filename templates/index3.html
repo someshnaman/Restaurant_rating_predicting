@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-attached:fixed;
+            background-size:cover;
+            background-image:  url({{url_for('static',filename='4.jpg')}})};
+        }
+    </style>
+
+    <title>Restaurant Rating Prediction</title>
+
+</head>
+<body style="width: 40%; margin: auto;">
+
+<h3>Predictive analysis(Restaurant Rating) </h3>
+<form action="{{ url_for('predictRouteClient')}}" method="POST">
+    <div class="form-group">
+        <lable for="name">Restaurant Name</lable>
+        <input class="form-control" id="name" name="name" required="required">
+    </div>
+
+    <!-- <div class="form-check">
+     <lable for="online_order">Online Order</lable><br>
+     Yes: <input type="radio" id="online_order_yes" name="online_order" value="Yes">
+     No: <input type="radio" id="online_order_no" name="online_order" value="No">
+     </div>-->
+    <div class="row">
+        <div class="col form-group" >
+            <lable for="name">Online Order</lable>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="online_order" id="online_order_yes" value="Yes">
+                <label class="form-check-label" for="online_order_yes">
+                    Yes
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="online_order" id="online_order_no" value="No">
+                <label class="form-check-label" for="online_order_no">
+                    No
+                </label>
+            </div>
+        </div>
+
+        <!--<lable>Book Table</lable>
+        <br>
+        Yes: <input type="radio" id="book_table_yes" name="book_table" value="Yes">
+        No: <input type="radio" id="book_table_no" name="book_table" value="No">
+        <br>-->
+
+        <div class="col form-group">
+            <lable for="name">Book Table</lable>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="book_table" id="book_table_yes" value="Yes">
+                <label class="form-check-label" for="book_table_yes">
+                    Yes
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="book_table" id="book_table_no" value="No">
+                <label class="form-check-label" for="book_table_no">
+                    No
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <lable for="votes">Votes</lable>
+        <input class="form-control" type="number" id="votes" name="votes" min="0">
+    </div>
+
+    <div class="form-group">
+        <lable for="location">Location of Restaurant</lable>
+        <br>
+        <input class="form-control" type="text" id="location" name="location" required="required">
+    </div>
+
+    <!--    <lable>Type of Restaurant</lable>-->
+    <!--    <br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Casual Dining"> Casual Dining<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Cafe"> Cafe<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Quick Bites"> Quick Bites<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Delivery"> Delivery<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Mess"> Mess<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Dessert Parlor"> Dessert Parlor<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Bakery"> Bakery<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Pub"> Pub<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Takeaway"> Takeaway<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Fine Dining"> Fine Dining<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Beverage Shop"> Beverage Shop<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Sweet Shop"> Sweet Shop<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Bar"> Bar<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Confectionery"> Confectionery<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Kiosk"> Kiosk<br>-->
+    <!--    <input type="checkbox" name="rest_type" value="Food Truck"> Food Truck<br>-->
+    <!--    <br>-->
+
+    <div class="form-group">
+        <lable>Type of Restaurant</lable>
+        <div class="row">
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Casual Dining"
+                       id="casual_dining">
+                <label class="form-check-label" for="casual_dining">
+                    Casual Dining
+                </label>
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Cafe" id="cafe">
+                <label class="form-check-label" for="cafe">
+                    Cafe
+                </label>
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Quick Bites" id="quick_bites">
+                <label class="form-check-label" for="quick_bites">
+                    Quick Bites
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Delivery" id="delivery">
+                <label class="form-check-label" for="delivery">
+                    Delivery
+                </label>
+
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Mess" id="Mess">
+                <label class="form-check-label" for="mess">
+                    Mess
+                </label>
+
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Dessert Parlor"
+                       id="dessert_parlor">
+                <label class="form-check-label" for="dessert_parlor">
+                    Dessert Parlor
+                </label>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Bakery" id="bakery">
+                <label class="form-check-label" for="bakery">
+                    Bakery
+                </label>
+
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Takeaway" id="takeaway">
+                <label class="form-check-label" for="takeaway">
+                    Takeaway
+                </label>
+
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Pub" id="pub">
+                <label class="form-check-label" for="pub">
+                    Pub
+                </label>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Fine Dining" id="fine_dining">
+                <label class="form-check-label" for="fine_dining">
+                    Fine Dining
+                </label>
+
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Beverage Shop"
+                       id="beverage_shop">
+                <label class="form-check-label" for="beverage_shop">
+                    Beverage Shop
+                </label>
+
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Sweet Shop" id="sweet_shop">
+                <label class="form-check-label" for="beverage_shop">
+                    Sweet Shop
+                </label>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Bar" id="bar">
+                <label class="form-check-label" for="bar">
+                    Bar
+                </label>
+
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Confectionery"
+                       id="confectionery">
+                <label class="form-check-label" for="confectionery">
+                    Confectionery
+                </label>
+
+            </div>
+
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Kiosk" id="kiosk">
+                <label class="form-check-label" for="kiosk">
+                    Kiosk
+                </label>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col form-check">
+                <input class="form-check-input" type="checkbox" name="rest_type" value="Food Truck" id="food_truck">
+                <label class="form-check-label" for="food_truck">
+                    Food Truck
+                </label>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <lable for="cuisines">What types of Cuisines The Restaurant Serves</lable>
+        <br>
+        <input class="form-control" type="text" id="cuisines" name="cuisines">
+    </div>
+
+    <!--    <lable>What types of Cuisines The Restaurant Serves</lable>-->
+    <!--    <br>-->
+    <!--    <input id="cuisines" name="cuisines" required="required">-->
+    <!--    <br>-->
+    <div class="form-group">
+        <lable for="cost">Cost</lable>
+        <input class="form-control" type="number" id="cost" name="cost" min="0">
+    </div>
+
+    <!--    -->
+    <!--    <lable>Cost</lable>-->
+    <!--    <br>-->
+    <!--    <input id="cost" name="cost" required="required">-->
+    <!--    <br>-->
+    <div class="form-group">
+        <lable for="menu_item">Menu Items</lable>
+        <br>
+        <input class="form-control" type="text" id="menu_item" name="menu_item">
+    </div>
+
+
+    <!--    -->
+    <!--    <lable>Menu Items</lable>-->
+    <!--    <br>-->
+    <!--    <input id="menu_item" name="menu_item" required="required">-->
+    <!--    <br>-->
+
+    <div class="form-group">
+        <lable for="city">City</lable>
+        <br>
+        <input class="form-control" type="text" id="city" name="city">
+    </div>
+
+    <!--    <lable>City</lable>-->
+    <!--    <br>-->
+    <!--    <input id="city" name="city" required="required">-->
+    <!--    <br>-->
+    <div class="col-auto my-1">
+        <button type="submit" id="sub" class="btn btn-primary">Calculate the Rating of Restaurant</button>
+    </div>
+
+    <!--    <button id="sub" type="submit ">Calculate the Rating of Restaurant</button>-->
+    <!--    <br>-->
+</form>
+
+<br><br>
+<h3>{{ prediction_text }}<h3>
+
+</body>
+</html>
