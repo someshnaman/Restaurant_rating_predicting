@@ -37,8 +37,4 @@ class prediction:
             raise Exception()
 
 
-test = prediction()
-test.predictionFromModel({'online_order': 1, 'book_table': 1, 'votes': 775,
-                          'location': 'Banashankari', 'rest_type': 24, 'cuisines': 1894, 'cost': 800.0,
-                          'menu_item': 8242,
-                          'city': 0})
+
