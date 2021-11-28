@@ -7,6 +7,7 @@ from predictionFromModel import prediction
 from wsgiref import simple_server
 import os
 
+
 app = Flask(__name__)
 dashboard.bind(app)
 CORS(app)
