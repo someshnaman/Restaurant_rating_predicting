@@ -26,9 +26,9 @@ def predictRouteClient():
         if request.method == 'POST':
             res_type = ", ".join(request.form.getlist('rest_type'))
             user_form_dict = {'name': request.form['name'], 'online_order': request.form['online_order'],
-                              'book_table': request.form['book_table'], 'votes': request.form['votes'],
+                              'book_table': request.form['book_table'], 'votes': int(request.form['votes']),
                               'location': request.form['location'], 'rest_type': res_type,
-                              'cuisines': request.form['cuisines'], 'cost': request.form['cost'],
+                              'cuisines': request.form['cuisines'], 'cost': int(request.form['cost']),
                               'menu_item': request.form.getlist('menu_item'), 'city': request.form['city']}
             prediction_of_user_data = prediction()
             predicted_data = prediction_of_user_data.predictionFromModel(user_form_dict)
@@ -62,5 +62,5 @@ if __name__ == "__main__":
     # app.run()
     httpd = simple_server.make_server(host=host, port=port, app=app)
     # httpd = simple_server.make_server(host='127.0.0.1', port=5000, app=app)
-    # print("Serving on %s %d" % (host, port))
+    print("Serving on %s %d" % (host, port))
     httpd.serve_forever()
