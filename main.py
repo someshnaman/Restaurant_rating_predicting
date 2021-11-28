@@ -4,6 +4,8 @@ from flask_cors import CORS, cross_origin
 from trainingModel import trainModel
 import flask_monitoringdashboard as dashboard
 from predictionFromModel import prediction
+from wsgiref import simple_server
+import os
 
 app = Flask(__name__)
 dashboard.bind(app)
@@ -52,5 +54,12 @@ def trainingModel():
         raise e
 
 
+port = int(os.getenv("PORT", 5001))
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    host = '0.0.0.0'
+    # app.run()
+    httpd = simple_server.make_server(host=host, port=port, app=app)
+    # httpd = simple_server.make_server(host='127.0.0.1', port=5000, app=app)
+    # print("Serving on %s %d" % (host, port))
+    httpd.serve_forever()
