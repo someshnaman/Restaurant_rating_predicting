@@ -6,6 +6,7 @@ jobs:
     executor: heroku/default
     docker:
       - image: circleci/python:3.9.7
+        #        -stretch-browsers
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference

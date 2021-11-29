@@ -83,3 +83,5 @@ class trainModel:
             self.file_object.close()
             raise Exception()
 
+x=trainModel()
+x.trainingModel()
