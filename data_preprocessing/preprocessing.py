@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
-import pickle
+import joblib
 import os
 from file_methods.file_operations import File_methods
 
@@ -104,7 +104,7 @@ class Preprocessing:
                 encoder = LabelEncoder()
                 data[column] = encoder.fit_transform(data[column])
                 path_to_save_file = open('./encoder' + '/' + column + '.sav', 'wb')
-                pickle.dump(encoder, path_to_save_file)
+                joblib.dump(encoder, path_to_save_file)
                 path_to_save_file.close()
             return data
         except Exception as e:
@@ -129,7 +129,7 @@ class Preprocessing:
 
                 if os.path.isfile(dir_of_encoder + key + '.sav'):
                     with open(dir_of_encoder + key + '.sav', 'rb') as f:
-                        encoder = pickle.load(f)
+                        encoder = joblib.load(f)
 
                         if dict_of_user_data[key] in encoder.classes_:
                             result_dict[key] = encoder.transform([dict_of_user_data[key]])[0]
