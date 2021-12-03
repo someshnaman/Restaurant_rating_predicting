@@ -82,6 +82,3 @@ class trainModel:
             self.logger.log(self.file_object, "Training Unsuccessful The error is " + str(e))
             self.file_object.close()
             raise Exception()
-
-x=trainModel()
-x.trainingModel()
