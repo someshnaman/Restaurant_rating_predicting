@@ -337,3 +337,15 @@
 2021-11-29/01:23:35		Starting converting the user data for model
 2021-11-29/01:26:49		Data preprocessing is done for prediction
 2021-11-29/01:27:05		Prediction is done from given data the rating for given Restaurant is [3.9] 
+2021-11-29/20:17:21		Starting converting the user data for model
+2021-11-29/20:17:56		Data preprocessing is done for prediction
+2021-11-29/20:17:59		Prediction is done from given data the rating for given Restaurant is [4.1] 
+2021-12-04/01:35:22		Starting converting the user data for model
+2021-12-04/01:35:23		Data preprocessing is done for prediction
+2021-12-04/01:35:23		Something went wrong in prediction Please checkinvalid load key, '\x01'.
+2021-12-04/01:36:55		Starting converting the user data for model
+2021-12-04/01:36:55		Data preprocessing is done for prediction
+2021-12-04/01:37:17		Something went wrong in prediction Please checkinvalid load key, '\x01'.
+2021-12-04/02:09:23		Starting converting the user data for model
+2021-12-04/02:09:23		Data preprocessing is done for prediction
+2021-12-04/02:09:33		Prediction is done from given data the rating for given Restaurant is [3.3] 

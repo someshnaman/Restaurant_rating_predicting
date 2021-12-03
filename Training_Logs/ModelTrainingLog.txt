@@ -107,3 +107,63 @@
 2021-11-27/21:14:07		Some error has occurred in Get_data class. The error message is [Errno 2] No such file or directory: './zomato.csv'
 2021-11-27/21:14:07		Data loading Unsuccessful
 2021-11-27/21:14:07		Training Unsuccessful The error is 
+2021-11-29/19:58:41		Starting the Model training
+2021-11-29/19:58:41		Initialising the get_data method
+2021-11-29/19:58:46		Successfully completed the reading the data
+2021-11-29/19:58:46		Data has successfully imported to training module
+2021-11-29/19:58:46		Initialising the removeUnnecessaryColumns method
+2021-11-29/19:58:46		The given number of columns has been successfully removed
+2021-11-29/19:58:46		Unnecessory columns from the data has been successfully removed
+2021-11-29/19:58:46		Starting removing duplicates from the data
+2021-11-29/19:58:47		Duplicate values has been removed
+2021-11-29/19:58:47		Duplicates have  been successfully removed
+2021-11-29/19:58:47		removing null values method has been called 
+2021-11-29/19:58:47		removing null values From data has been completed
+2021-11-29/19:58:47		null values have  been successfully removed from the data
+2021-11-29/19:58:47		renaming the columns from the data
+2021-11-29/19:58:47		removing null values method has been called renaming of columns has been completed
+2021-11-29/19:58:47		renaming of column is successfully done
+2021-11-29/19:58:47		Conversion of cost column into float datatype is done
+2021-11-29/19:58:47		formatting for rating column is done
+2021-11-29/19:58:47		Conversion  of categorical is successfully done
+2021-11-29/19:58:55		Conversion  of categorical is successfully done
+2021-11-29/19:58:55		Starting out for finding out best parameters for Random Forest
+2021-11-29/19:59:40		Random forest model has been successfully created
+2021-11-29/19:59:41		R2 value wrt random forest turn out to be 0.8529525546153307 
+2021-11-29/20:00:11		Extaa tree model has been successfully created
+2021-11-29/20:00:13		R2 value wrt Extraa tree turn out to be 0.8733689014323567 
+2021-11-29/20:00:13		Best model is Extra Tree
+2021-11-29/20:00:13		best Model is Extra tree
+2021-11-29/20:00:13		Initialising the save_model method
+2021-11-29/20:00:35		Successfully saved the model
+2021-11-29/20:00:35		Extra tree Model has been successfully saved
+2021-12-04/02:05:00		Starting the Model training
+2021-12-04/02:05:00		Initialising the get_data method
+2021-12-04/02:05:10		Successfully completed the reading the data
+2021-12-04/02:05:10		Data has successfully imported to training module
+2021-12-04/02:05:10		Initialising the removeUnnecessaryColumns method
+2021-12-04/02:05:10		The given number of columns has been successfully removed
+2021-12-04/02:05:10		Unnecessory columns from the data has been successfully removed
+2021-12-04/02:05:10		Starting removing duplicates from the data
+2021-12-04/02:05:10		Duplicate values has been removed
+2021-12-04/02:05:10		Duplicates have  been successfully removed
+2021-12-04/02:05:10		removing null values method has been called 
+2021-12-04/02:05:10		removing null values From data has been completed
+2021-12-04/02:05:10		null values have  been successfully removed from the data
+2021-12-04/02:05:10		renaming the columns from the data
+2021-12-04/02:05:10		removing null values method has been called renaming of columns has been completed
+2021-12-04/02:05:10		renaming of column is successfully done
+2021-12-04/02:05:10		Conversion of cost column into float datatype is done
+2021-12-04/02:05:10		formatting for rating column is done
+2021-12-04/02:05:11		Conversion  of categorical is successfully done
+2021-12-04/02:06:05		Conversion  of categorical is successfully done
+2021-12-04/02:06:06		Starting out for finding out best parameters for Random Forest
+2021-12-04/02:06:47		Random forest model has been successfully created
+2021-12-04/02:06:49		R2 value wrt random forest turn out to be 0.8529525546153307 
+2021-12-04/02:06:52		Extaa tree model has been successfully created
+2021-12-04/02:06:52		R2 value wrt Extraa tree turn out to be 0.8717424804648031 
+2021-12-04/02:06:52		Best model is Extra Tree
+2021-12-04/02:06:58		best Model is Extra_tree
+2021-12-04/02:06:59		Initialising the save_model method
+2021-12-04/02:07:00		Successfully saved the model
+2021-12-04/02:07:01		Extra_tree Model has been successfully saved

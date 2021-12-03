@@ -3,6 +3,7 @@ import pickle
 from application_logging.app_logger import App_logger
 from data_preprocessing.preprocessing import Preprocessing
 import numpy as np
+import joblib
 
 
 class prediction:
@@ -24,7 +25,7 @@ class prediction:
                 if '.sav' in file:
                     path_of_model = './models/' + file
                     with open(path_of_model, 'rb') as f:
-                        model = pickle.load(f)
+                        model = joblib.load(f)
                         predicted_data = np.round(model.predict(np.array([data_to_send_to_model])), 1)
 
                     self.logger.log(self.file_object, f"Prediction is done from given data the rating for "

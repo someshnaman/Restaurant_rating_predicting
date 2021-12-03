@@ -1,4 +1,4 @@
-import pickle
+import joblib
 import os
 
 
@@ -23,7 +23,7 @@ class File_methods:
         try:
             path = os.path.join(self.model_directory, file_name)
             with open(path+'.sav', 'wb') as f:
-                pickle.dump(model,f)
+                joblib.dump(model,f)
             self.logger.log(self.file_object, "Successfully saved the model")
             return 'Success'
         except Exception as e:

@@ -20,7 +20,7 @@ class Model_finder:
         self.logger.log(self.file_object, "Starting out for finding out best parameters for Random Forest")
         try:
             # Creating a Model wrt Random Forest
-            self.rand_forrest = RandomForestRegressor(n_estimators=500, random_state=329)
+            self.rand_forrest = RandomForestRegressor(n_estimators=500)
             self.rand_forrest.fit(self.train_x, self.train_y)
             self.logger.log(self.file_object, "Random forest model has been successfully created")
             # finding out the accuracy
@@ -32,7 +32,7 @@ class Model_finder:
                             f"R2 value wrt random forest turn out to be {self.r2_score_of_random_forest} ")
 
             # Creating a model wrt Extra tree regressor
-            self.extra_tree = ExtraTreesRegressor(n_estimators=500, random_state=329)
+            self.extra_tree = ExtraTreesRegressor(n_estimators=54)
             self.extra_tree.fit(self.train_x, self.train_y)
             self.logger.log(self.file_object, "Extaa tree model has been successfully created")
 
@@ -44,10 +44,10 @@ class Model_finder:
                             f"R2 value wrt Extraa tree turn out to be {self.r2_score_of_extra_tree} ")
             if self.r2_score_of_extra_tree > self.r2_score_of_random_forest:
                 self.logger.log(self.file_object, "Best model is Extra Tree")
-                return 'Extra tree', self.extra_tree
+                return 'Extra_tree', self.extra_tree
             else:
                 self.logger.log(self.file_object, "Best model is Random Forest")
-                return "Random Forest", self.rand_forrest
+                return "Random_forest", self.rand_forrest
         except Exception as e:
             self.logger.log(self.file_object,
                             "Something went wrong and model selection can't be successfully Executed"
