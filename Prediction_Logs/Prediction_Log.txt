@@ -349,3 +349,9 @@
 2021-12-04/02:09:23		Starting converting the user data for model
 2021-12-04/02:09:23		Data preprocessing is done for prediction
 2021-12-04/02:09:33		Prediction is done from given data the rating for given Restaurant is [3.3] 
+2021-12-04/17:22:45		Starting converting the user data for model
+2021-12-04/17:22:45		Data preprocessing is done for prediction
+2021-12-04/17:22:59		Prediction is done from given data the rating for given Restaurant is [3.4] 
+2021-12-04/17:54:10		Starting converting the user data for model
+2021-12-04/17:54:10		Data preprocessing is done for prediction
+2021-12-04/17:54:22		Prediction is done from given data the rating for given Restaurant is [3.5] 
