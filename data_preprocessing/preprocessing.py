@@ -126,9 +126,10 @@ class Preprocessing:
             result_dict = {}
             for key in dict_of_user_data.keys():
                 dir_of_encoder = './encoder/'
-
+                print(dir_of_encoder)
                 if os.path.isfile(dir_of_encoder + key + '.sav'):
                     with open(dir_of_encoder + key + '.sav', 'rb') as f:
+                        print(f)
                         encoder = joblib.load(f)
 
                         if dict_of_user_data[key] in encoder.classes_:
