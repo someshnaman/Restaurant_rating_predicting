@@ -13,15 +13,16 @@ food where we get quality food. To accomplish that, whether the restaurant can p
 The main goal is to predict the Rating of the Restarant.
 create a table.
 
-Data Exploration     : I started exploring dataset using pandas,numpy,matplotlib and seaborn.
-Data visualization   : Ploted graphs to get insights about dependend and independed variables.
-Feature Engineering  :  Removed missing values and created new features as per insights.
-Model Selection I    :  1. Tested all base models to check the base accuracy.             
-                        2. Also ploted residual plot to check whether a model is a good fit or not.
-Model Selection II   :  Performed Hyperparameter tuning using gridsearchCV and randomizedSearchCV.
-Pickle File          :  Selected model as per best accuracy and created pickle file using joblib.
-Webpage & deployment :  Created a webform that takes all the necessary inputs from user and shows output.
-                                After that I have deployed project on heroku and AWS EC2.
+<pre> 
+<li> Data Exploration     : I started exploring dataset using pandas,numpy,matplotlib and seaborn. </li>
+<li> Data visualization   : Ploted graphs to get insights about dependend and independed variables. </li>
+<li> Feature Engineering  :  Removed missing values and created new features as per insights.</li>
+<li> Model Selection I    :  1. Tested all base models to check the base accuracy.
+                             2. Also ploted residual plot to check whether a model is a good fit or not.</li>
+<li> Model Selection II   :  Performed Hyperparameter tuning using gridsearchCV and randomizedSearchCV.</li>
+<li> Pickle File          :  Selected model as per best accuracy and created pickle file using joblib .</li>
+<li> Webpage & deployment :  Created a webform that takes all the necessary inputs from user and shows output.
+                                After that I have deployed project on heroku and AWS EC2/li></pre>
 ## Installation
 -Steps to run this project
 
