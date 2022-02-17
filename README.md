@@ -11,7 +11,7 @@ food where we get quality food. To accomplish that, whether the restaurant can p
 ![alt text](https://github.com/someshnaman/Restaurant_rating_predicting/blob/main/templates/Demo.PNG?raw=true)
 ## Approach
 The main goal is to predict the Rating of the Restarant.
-create a table.
+
 
 <pre> 
 <li> Data Exploration     : I started exploring dataset using pandas,numpy,matplotlib and seaborn. </li>
